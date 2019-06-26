@@ -13,7 +13,7 @@ namespace FizzBuzzerTests.Library
     {
         [Test]
         public void Buzzer_WhenDefault_ReturnsInput(
-            [Values(2)] int input)
+            [Values(1,2,4,6)] int input)
         {
             string output = FizzBuzzer.GetValue(input);
 
@@ -28,6 +28,16 @@ namespace FizzBuzzerTests.Library
             string output = FizzBuzzer.GetValue(input);
 
             Assert.AreEqual("Fizz", output);
+        }
+
+        [Test]
+        public void Buzzer_When5_ReturnsBuzz()
+        {
+            int input = 5;
+
+            string output = FizzBuzzer.GetValue(input);
+
+            Assert.AreEqual("Buzz", output);
         }
     }
 }

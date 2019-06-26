@@ -33,5 +33,15 @@ namespace FizzBuzzerTests.Library
 
             Assert.AreEqual("2", output);
         }
+
+        [Test]
+        public void Buzzer_When3_ReturnsFizz()
+        {
+            int input = 3;
+
+            string output = FizzBuzzer.GetValue(input);
+
+            Assert.AreEqual("Fizz", output);
+        }
     }
 }

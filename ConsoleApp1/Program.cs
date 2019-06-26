@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fizzbuzz.Library;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,8 @@ namespace FizzBuzz
         {
             for(int i=1; i<=100;i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(FizzBuzzer.GetValue(i));
             }
-
-            Console.ReadLine();
         }
     }
 }

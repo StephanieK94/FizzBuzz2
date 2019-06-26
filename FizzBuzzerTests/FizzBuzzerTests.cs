@@ -19,8 +19,19 @@ namespace FizzBuzzerTests.Library
 
             // Act
             string output = FizzBuzzer.GetValue(input);
+
             // Assert
             Assert.AreEqual("1", output);
+        }
+
+        [Test]
+        public void Buzzer_When2_Returns2()
+        {
+            int input = 2;
+
+            string output = FizzBuzzer.GetValue(input);
+
+            Assert.AreEqual("2", output);
         }
     }
 }

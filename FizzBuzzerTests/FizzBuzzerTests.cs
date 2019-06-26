@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Fizzbuzz.Library;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,15 @@ namespace FizzBuzzerTests.Library
     public class FizzBuzzerTests
     {
         [Test]
-        public void SampleTest()
+        public void Buzzer_When1_Returns1()
         {
-            Assert.Pass();
+            //Arrange
+            int input = 1;
+
+            // Act
+            string output = FizzBuzzer.GetValue(input);
+            // Assert
+            Assert.AreEqual("1", output);
         }
     }
 }

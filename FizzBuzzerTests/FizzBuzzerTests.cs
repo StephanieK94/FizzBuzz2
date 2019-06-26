@@ -13,7 +13,7 @@ namespace FizzBuzzerTests.Library
     {
         [Test]
         public void Buzzer_WhenDefault_ReturnsInput(
-            [Values(1,2,4,7,8,11,13,14)] int input)
+            [Values(1,2,4,7,8,11,13,14,16,17,19)] int input)
         {
             string output = FizzBuzzer.GetValue(input);
 
@@ -21,7 +21,7 @@ namespace FizzBuzzerTests.Library
         }
 
         [Test]
-        public void Buzzer_WhenDivisibleOf3_ReturnsFizz([Values(3,6,9,12)] int input)
+        public void Buzzer_WhenDivisibleOf3_ReturnsFizz([Values(3,6,9,12,18)] int input)
         {
             string output = FizzBuzzer.GetValue(input);
 
@@ -29,7 +29,7 @@ namespace FizzBuzzerTests.Library
         }
 
         [Test]
-        public void Buzzer_WhenDivisible5_ReturnsBuzz([Values(5, 10)] int input)
+        public void Buzzer_WhenDivisible5_ReturnsBuzz([Values(5, 10, 20)] int input)
         {
             string output = FizzBuzzer.GetValue(input);
 
